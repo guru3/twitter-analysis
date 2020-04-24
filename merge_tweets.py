@@ -4,8 +4,8 @@ import csv
 import datetime
 
 BASE_PATH = '.'
-RAW_DATA_PATH = './raw'
-MERGED_DIRECTORY = 'tweets'
+RAW_DATA_PATH = './raw_data'
+MERGED_DIRECTORY = 'tweets_dirty'
 DATETIME_FORMAT = "%Y_%m_%d_%H_%M_%S"
 
 final_path = ''
@@ -35,7 +35,7 @@ def files_mapping():
 	sorted_directories = get_all_directories_time_sorted();
 	file_to_paths = {};
 	for directory in sorted_directories:
-		dir_path = os.path.join(BASE_PATH, directory)
+		dir_path = os.path.join(RAW_DATA_PATH, directory)
 		files = os.listdir(dir_path)
 		for file in files:
 			if not( '.csv' in file ):
