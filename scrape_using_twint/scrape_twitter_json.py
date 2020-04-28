@@ -86,9 +86,8 @@ if __name__ == '__main__':
      'ZeeNewsEnglish', 
      'PTI_News', 'TimesNow', 
      'timesofindia', 'IndianExpress', 'TOIIndiaNews',
-
-    # 'ThePrintIndia', 'the_hindu', 'thewire_in', 
-    # 'narendramodi', 'ArvindKejriwal', 'realDonaldTrump', 
+     'ThePrintIndia', 'the_hindu', 'thewire_in', 
+     'narendramodi', 'ArvindKejriwal', 'realDonaldTrump', 
     ]
     for i in range(100):  #it fails intermittently sometimes
         for name in users:
